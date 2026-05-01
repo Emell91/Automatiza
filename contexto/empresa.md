@@ -50,7 +50,7 @@ Lead entra
 
 ## Cómo opera la empresa
 
-Emell toma las decisiones estratégicas y aprueba cualquier acción que afecte a terceros. La ejecución operativa diaria — comunicaciones, seguimiento de clientes, gestión de proyectos, finanzas, rutinas — corre a cargo del agente OClaw en la nube. Emell se comunica con el agente por Telegram.
+Emell toma las decisiones estratégicas y aprueba cualquier acción que afecte a terceros. La ejecución operativa diaria — comunicaciones, seguimiento de clientes, gestión de proyectos, finanzas, rutinas — corre a cargo de Hermes Agent en la nube. Emell se comunica con el agente por Slack.
 
 El agente evoluciona junto con la empresa: se le van añadiendo instrucciones, habilidades y rutinas según la operativa real lo vaya requiriendo.
 
@@ -58,10 +58,9 @@ El agente evoluciona junto con la empresa: se le van añadiendo instrucciones, h
 
 - **Google Workspace** (automatizatuidea.com): Gmail, Calendar, Drive, Sheets, Docs
 - Toda la documentación de empresa vive en Drive. El disco local se reserva para proyectos de desarrollo.
-- **Agente VPS:** OClaw (OpenClaw) en Hetzner CX23
-- **LLM principal:** OpenAI Codex (codex-5) vía OAuth con suscripción Plus de Emell
-- **LLM fallback:** OpenRouter (modelo barato a elegir si Codex no aguanta el mes)
-- **Comunicación con agente:** Telegram (OClaw_Automatiza_Bot)
+- **Agente VPS:** Hermes Agent en Hetzner CX23
+- **LLM principal:** OpenRouter (Nvidia Nemotron o similares) / OpenAI
+- **Comunicación con agente:** Slack (integración nativa vía Socket Mode)
 
 ## Objetivos
 
